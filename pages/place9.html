@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>슬로핸드 상세정보</title>
+  <link rel="stylesheet" href="../style.css"> <!-- 공통 스타일 시트 불러오기 -->
+</head>
+<body>
+  <div class="container"> <!-- 전체 콘텐츠 중앙 정렬을 위한 컨테이너 -->
+
+    <!-- ===== 페이지 제목 ===== -->
+    <h2>슬로핸드 상세정보</h2>
+    <hr>
+
+    <!-- ===== 외부 링크 (다이닝코드, 네이버 지도) ===== -->
+    <h3>슬로핸드 대표정보</h3>
+    <ul>
+      <li>
+        <a href="https://www.diningcode.com/profile.php?rid=cUQQr8hYQ8fc" target="_blank">
+          다이닝코드 슬로핸드 정보
+        </a>
+      </li>
+      <li>
+        <a href="https://map.naver.com/p/entry/place/1084989081?c=15.00,0,0,0,dh" target="_blank">
+          네이버 플레이스 슬로핸드 정보
+        </a>
+      </li>
+    </ul>
+
+    <!-- ===== 슬로핸드 기본 정보 테이블 ===== -->
+    <div>
+      <table class="info-table"> <!-- 테이블에 공통 스타일 적용 -->
+        <thead>
+          <tr>
+            <th>대표이미지</th>
+            <th>상호</th>
+            <th>구분</th>
+            <th>평점</th>
+            <th>위치</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <!-- 대표 이미지 (크기 및 스타일은 .menu-img로 설정됨) -->
+            <td><img src="../../media/place9.jpg" alt="슬로핸드" class="menu-img"></td>
+            <td>슬로핸드</td>
+            <td>카페, 핸드드립커피</td>
+            <td>4.5</td>
+            <td>서울특별시 강북구 삼양로141길 15-8</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <hr>
+
+    <!-- ===== 구글 지도 iframe ===== -->
+    <h3>슬로핸드 위치</h3>
+    <div class="map-wrap"> <!-- 지도 iframe 중앙 정렬 -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3158.9757430425366!2d127.00963127654356!3d37.649774319349696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cbdd9735035b3%3A0x38dc66b67f00a77!2z7Iqs66Gc7ZW465Oc!5e0!3m2!1sko!2skr!4v1741921884100!5m2!1sko!2skr"
+        class="map-frame"        <!-- 스타일시트에서 width, height, border 등 설정 -->
+        allowfullscreen
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+  </div> <!-- /.container -->
+</body>
+</html>

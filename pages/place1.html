@@ -1,39 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>미성반점 상세정보</title>
-</head>
-<body>
-  <h2>미성반점 상세정보</h2>
-<hr>
-<h3>미성반점 대표정보</h3>
-<li><a href="https://www.diningcode.com/profile.php?rid=EoSFCReL7v7S">다이닝코드 미성반점 정보</a></li>
-<li><a href="https://www.diningcode.com/profile.php?rid=EoSFCReL7v7S">네이버 플레이스 미성반점 정보</a></li>
+<html lang="ko">
 
-<table>
-  <thead>
-    <tr>
-        <th>대표이미지</th> 
-        <th>상호</th> 
-        <th>구분</th> 
-        <th>평점</th> 
-        <th>위치</th>
-    </tr>
-</thead>
-<tr>
-  <td>
-      <img src="../../media/place1.jpg" alt="미성반점" width="100" height="100">
-  </td>
-  <td>미성반점</td>
-  <td>짬뽕, 중국집</td>
-  <td>4.6</td>
-  <td>서울특별시 강북구 4.19로 37 1층</td>
-</tr>
-</table>
-<hr>
-<h3>미성반점 위치</h3>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3159.0904420162337!2d127.01014319999999!3d37.6470777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cbdc2d050b8c7%3A0xe9a9e980609ea609!2z66-47ISx67CY7KCQ!5e0!3m2!1sko!2skr!4v1741846941280!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  
+<head>
+  <meta charset="utf-8">
+  <title>미성반점 상세정보</title>
+  <link rel="stylesheet" href="../style.css"> <!-- 외부 CSS 파일 연결 -->
+</head>
+
+<body>
+  <div class="container"> <!-- 페이지 전체 중앙 정렬용 컨테이너 -->
+
+    <!-- 제목 및 상단 구분선 -->
+    <h2>미성반점 상세정보</h2>
+    <hr>
+
+    <!-- ▶ 대표 정보 링크 목록 (외부 페이지로 연결) -->
+    <h3>미성반점 대표정보</h3>
+    <ul>
+      <li>
+        <a href="https://www.diningcode.com/profile.php?rid=EoSFCReL7v7S" target="_blank">
+          다이닝코드 미성반점 정보
+        </a>
+      </li>
+      <li>
+        <a href="https://map.naver.com/p/entry/place/1898093858?placePath=%252Fhome%253Fentry%253Dplt&searchType=place&lng=127.0101463&lat=37.6471461&c=15.00,0,0,0,dh" target="_blank">
+          네이버 플레이스 미성반점 정보
+        </a>
+      </li>
+    </ul>
+
+    <!-- ▶ 미성반점 상세 테이블 정보 -->
+    <div>
+      <table class="info-table">
+        <thead>
+          <tr>
+            <th>대표이미지</th>
+            <th>상호</th>
+            <th>구분</th>
+            <th>평점</th>
+            <th>위치</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <!-- 대표 이미지 (CSS로 크기 및 스타일 설정됨) -->
+            <td>
+              <img src="../../media/place1.jpg" alt="미성반점" class="menu-img">
+            </td>
+            <td>미성반점</td>
+            <td>짬뽕, 중국집</td>
+            <td>4.6</td>
+            <td>서울특별시 강북구 4.19로 37 1층</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <hr>
+
+    <!-- ▶ 구글 지도 iframe -->
+    <h3>미성반점 위치</h3>
+    <div class="map-wrap">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3159.0902625477884!2d127.00756827654347!3d37.64708191950438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cbdc2d050b8c7%3A0xe9a9e980609ea609!2z66-47ISx67CY7KCQ!5e0!3m2!1sko!2skr!4v1741822337895!5m2!1sko!2skr"
+        class="map-frame"  <!-- CSS에서 크기 및 스타일 제어 -->
+        allowfullscreen
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+  </div> <!-- /.container -->
 </body>
+
 </html>

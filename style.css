@@ -1,0 +1,91 @@
+/* ============================= */
+/* 페이지 상단 안내 문구 & 강조 텍스트 */
+/* ============================= */
+
+.notice-box {
+  background-color: skyblue;     /* 눈에 띄는 배경 */
+  padding: 10px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.highlight {
+  color: red;                    /* 강조용 빨간색 */
+  font-weight: bold;
+}
+
+
+/* ============================= */
+/* 전체 레이아웃 중앙 정렬 영역 */
+/* ============================= */
+
+.container {
+  text-align: center;            /* 텍스트 및 인라인 요소 가운데 정렬 */
+  max-width: 800px;              /* 너무 넓지 않도록 제한 */
+  margin: 0 auto;                /* 화면 기준 수평 중앙 정렬 */
+}
+
+
+/* ============================= */
+/* 대표 이미지 스타일 */
+/* ============================= */
+
+.menu-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;             /* 이미지 비율 유지하며 채움 */
+  border-radius: 8px;            /* 둥근 모서리 */
+}
+
+
+/* ============================= */
+/* 테이블 스타일 (목록 + 상세 모두) */
+/* ============================= */
+
+table,
+.info-table {
+  width: 100%;
+  border-collapse: collapse;     /* 셀 경계선 겹침 */
+  margin: 20px auto;             /* 위 여백 + 중앙 정렬 */
+}
+
+th, td,
+.info-table th,
+.info-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+th,
+.info-table thead {
+  background-color: #f5f5f5;     /* 열 제목 배경색 */
+}
+
+
+/* 마우스 오버 시 강조 (시각적 피드백) */
+.info-table tbody tr:hover {
+  background-color: #f0f8ff;     /* 밝은 파란 배경 */
+  cursor: pointer;               /* 손가락 모양 */
+  transition: background-color 0.3s ease;
+}
+
+
+/* ============================= */
+/* 지도 iframe 중앙 정렬 스타일 */
+/* ============================= */
+
+.map-wrap {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  /* inline-block에서 flex로 변경함 — 가로 중앙 정렬 일관성 ↑ */
+}
+
+.map-frame {
+  width: 600px;
+  height: 450px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  /* ※ 이 크기는 고정값이므로 반응형이 필요하다면 추후 수정 필요 */
+}
